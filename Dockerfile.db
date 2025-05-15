@@ -1,4 +1,4 @@
-FROM postgres:15.2-alpine
+FROM postgres:15.13-alpine
 
 ENV POSTGRES_DB sqli
 COPY ./migrations/* /docker-entrypoint-initdb.d/
